@@ -1,9 +1,9 @@
 {
     "1": {
         "character": "main",
+        "sprite": "base",
         "text": "Uwah! I’m about to start a new school!!! I hope nobody bullies me like in my old school…. Gasp! Maybe I’ll even,....... find a girlfriend?!",
         "type": "table",
-        "sprite": "base",
         "answers": {
             "f": {
                 "text": "Press F to proceed.",
@@ -19,9 +19,9 @@
     },
     "3": {
         "character": "main",
+        "sprite": "base",
         "text": "(Omg! She’s so kawaii!!! UWahhh, should I talk to her???)",
         "type": "table",
-        "sprite": "blush",
         "answers": {
             "f": {
                 "text": "Press F to proceed.",
@@ -31,9 +31,9 @@
     },
     "4": {
         "character": "uwa",
-        "text": "*Your eyes meet hers and she she smiles shyly back at you*",
-        "type": "table",
         "sprite": "base",
+        "text": "Your eyes meet hers and she she smiles shyly back at you",
+        "type": "table",
         "answers": {
             "f": {
                 "text": "Press F to proceed.",
@@ -43,9 +43,9 @@
     },
     "5": {
         "character": "kaicho",
+        "sprite": "mad",
         "text": "Hey! You're on board cleaning duty today! Don't mess it up, or else I'l have to tell the teacher!",
         "type": "table",
-        "sprite": "mad",
         "answers": {
             "f": {
                 "text": "Press F to proceed.",
@@ -55,87 +55,19 @@
     },
     "6": {
         "character": "main",
+        "sprite": "base",
         "text": "(Omg, she's so fierce and sugoiii! I'm getting chills just listening to her! I feel so drawn...)\n(Uwahhh... Who do I ask for directions??)",
         "type": "table",
-        "sprite": "blush",
         "answers": {
             "a": {
-                "text": "Compliment Kaicho-chans leadership skills and try to charm her with your incel skills!",
-                "leads_to": 7
+                "text": "Compliment Kaicho-chans leadership skills and try to charm her with your incel skills!"
             },
             "b": {
-                "text": "Pet Uwa-chans ears and ask if she can show you to the classroom!",
-                "leads_to": 11
+                "text": "Pet Uwa-chans ears and ask if she can show you to the classroom!"
             },
             "c": {
-                "text": "Ignore them and head to class.",
-                "leads_to": 13
+                "text": "Ignore them and head to class."
             }
-        }
-    },
-    "7": {
-        "character": "main",
-        "text": "Ohayo-desu! You looked so sugoi earlier when you were ordering them around! I-im just so shy around girls and they all seem to hate me for some reason, b-b-b-but I wanna try something different this year! Please hang out with me, and I'll protect you! Senpai will protect you ( ◡̀_◡́)ᕤ",
-        "type": "table",
-        "sprite": "base",
-        "answers": {
-            "a": {
-                "text": "Compliment Kaicho-chans leadership skills and try to charm her with your incel skills!",
-                "leads_to": 8
-            }
-            
-        }
-    },
-    "8": {
-        "character": "main",
-        "text": "Ohayo-desu! You looked so sugoi earlier when you were ordering them around! I-im just so shy around girls and they all seem to hate me for some reason, b-b-b-but I wanna try something different this year! Please hang out with me, and I'll protect you! Senpai will protect you ( ◡̀_◡́)ᕤ",
-        "type": "table",
-        "sprite": "base",
-        "answers": {
-            "f": {
-                "text": "Press F to proceed.",
-                "leads_to": 9
-            }
-            
-        }
-    },
-    "9": {
-        "character": "kaicho",
-        "text": "Konnichi-wassup! I know, I'm so cool like that! I'm the class president, so I have to lead everyone.",
-        "type": "table",
-        "sprite": "thumbsup",
-        "answers": {
-            "f": {
-                "text": "Press F to proceed.",
-                "leads_to": 10
-            }
-            
-        }
-    },
-    "10": {
-        "character": "kaicho",
-        "text": "Sure, you can hang around me, but I don't need your protection! Cmon, I'll show you to your classroom cause I'm nice like that. Name's Kaichoderkumachisendukasakurayomamasani, but call me Kaicho-chan!!",
-        "type": "table",
-        "sprite": "base",
-        "answers": {
-            "f": {
-                "text": "Press F to proceed.",
-                "leads_to": 13
-            }
-            
-        }
-    },
-    "11": {
-        "character": "kaicho",
-        "text": "Sure, you can hang around me, but I don't need your protection! Cmon, I'll show you to your classroom cause I'm nice like that. Name's Kaichoderkumachisendukasakurayomamasani, but call me Kaicho-chan!!",
-        "type": "table",
-        "sprite": "base",
-        "answers": {
-            "f": {
-                "text": "Press F to proceed.",
-                "leads_to": 13
-            }
-            
         }
     }
 }

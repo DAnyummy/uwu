@@ -12,7 +12,7 @@ def dialogue(character, sprite, text, answers):
     # fetch character sprite, return in printable text
     sprite = get_sprite(character, sprite)
 
-    dialogue = Panel(Align.center(text, vertical="middle"))
+    dialogue = Panel(Align.center(text, vertical="middle"), style="rgb(255,105,180)")
 
     answer_panel = Layout(name="answer_wrapper")
 
@@ -20,12 +20,18 @@ def dialogue(character, sprite, text, answers):
 
     for letter, answer in answers.items():
         answer_panel.add_split(
-            Layout(Panel(Align.center(f"{answer["text"]}", vertical="middle"), title=f"{letter.upper()}:"))
+            Layout(
+                Panel(
+                        Align.center(f"{answer["text"]}", vertical="middle"), 
+                        title=f"{letter.upper()}:",
+                        style="rgb(255,182,193)"
+                    )
+                )
         )
 
     layout = Layout()
     layout.split_column(
-        Layout(Panel(Align.center(sprite), title=character), name="character_sprite", ratio=2),
+        Layout(Panel(Align.center(sprite), title=character, style="rgb(255,20,147)"), name="character_sprite", ratio=2),
         Layout(name="dialogue_wrapper")
     )
 

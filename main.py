@@ -3,7 +3,6 @@ from functions.narration import narration
 from rich.console import Console
 import json
 import os
-from rich import print
 
 console = Console()
 

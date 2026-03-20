@@ -200,7 +200,7 @@
     "18": {
         "character": "main",
         "sprite": "blush",
-        "text": "*Raises eyebrow, “NANI?” Was that what I think it was!?? C-could it be... IRL WAIFU YURI?!?!?\"",
+        "text": "*Raises eyebrow, “NANI?” Was that what I think it was!? C-could it be... IRL WAIFU YURI?!?!?\"",
         "type": "table",
         "answers": {
             "f": {
@@ -263,6 +263,7 @@
     "25": {
         "text": "You aim the gun towards your own head, and everything turns to black.\n\n[FIN]",
         "type": "narration",
-        "delay": 1
+        "delay": 1,
+        "leads_to": 1
     }
 }

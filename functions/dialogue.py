@@ -12,7 +12,7 @@ def dialogue(character, sprite, text, answers):
     # fetch character sprite, return in printable text
     sprite = get_sprite(character, sprite)
 
-    dialogue = Panel(Align.center(text, vertical="middle"), style="rgb(255,105,180)")
+    dialogue = Panel(Align.center(text, vertical="middle"), padding=(0,2))
 
     answer_panel = Layout(name="answer_wrapper")
 

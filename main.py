@@ -1,15 +1,21 @@
 from functions.dialogue import dialogue
 from functions.narration import narration
+from rich.console import Console
 import json
 import os
+from rich import print
+
+console = Console()
 
 # TODO: implement parser function, parses JSON file and runs game
 def parser():
-    with open('storyline.json', 'r') as file:
+    with open('storyline.json', 'r', encoding="utf-8") as file:
         gamefile = json.load(file)
 
         index_at = 1
         while True:
+            console.show_cursor(False)
+
             os.system('cls' if os.name == 'nt' else 'clear')
             current = gamefile[f"{index_at}"]
 

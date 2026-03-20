@@ -60,14 +60,209 @@
         "type": "table",
         "answers": {
             "a": {
-                "text": "Compliment Kaicho-chans leadership skills and try to charm her with your incel skills!"
+                "text": "Compliment Kaicho-chans leadership skills and try to charm her with your incel skills!",
+                "leads_to": 7
             },
             "b": {
-                "text": "Pet Uwa-chans ears and ask if she can show you to the classroom!"
+                "text": "Pet Uwa-chans ears and ask if she can show you to the classroom!",
+                "leads_to": 10
             },
             "c": {
-                "text": "Ignore them and head to class."
+                "text": "Ignore them and head to class.",
+                "leads_to": 12
             }
         }
+    },
+    "7": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "Ohayo-desu! You looked so sugoii earlier when you were ordering them around! I-im just so shy around girls and they all seem to hate me for some reason, b-b-b-but I wanna try something different this year! Please hang out with me, and I’ll protect you! Senpai will protect you!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 8
+            }
+        }
+    },
+    "8": {
+        "character": "kaicho",
+        "sprite": "base",
+        "text": "Konnichi-wassup! I know, I'm so cool like that! I'm the class president, so I have to lead everyone.",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "press F to proceed",
+                "leads_to": 9
+            }
+        }
+    },
+    "9": {
+        "character": "kaicho",
+        "sprite": "thumbsup",
+        "text": "Sure, you can hang around me, but I don’t need your protection! Cmon, I’ll show you to your classroom cause I’m nice like that. Name’s Kaichoderukumachisendukasakura, but call me Kaicho!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "press F to proceed",
+                "leads_to": 12
+            }
+        }
+    },
+    "10": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "Ohayo, name's Senpai! Saw you lurking around the blue-haired girl, and I thought your ears looked super PLUS ULTRA! Mind if I touch them? Wow, they're so soft and petite!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 11
+            }
+        }
+    },
+    "11": {
+        "character": "uwa",
+        "sprite": "blush",
+        "text": "Uwahhhhh, Uwa-chan i-i-i-i-i-i-i-is s-s-s-s-so h-honored that Senpai w-w-wants to p-p-p-pet me! Super duper truper sugoiiii kawaiiiiii!!! Here, Uwa-chan will h-help you get to o-o-our classroom (≧ω≦)",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 12
+            }
+        }
+    },
+    "12": {
+        "text": "You arrive at the classroom. \\n You look around and see everyone sit amongst their friends. Everyone except for you.",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 13
+    },
+    "13": {
+        "character": "main",
+        "sprite": "sad",
+        "text": "(Sigh.. I'm too dumb and stupid and ugly and nerdy and totally not attractive enough to ever talk to either of them!!! I'll just think about anime alone… with no one to talk about my favorite anime \"Days with my Stepsister\" to..)",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to continue",
+                "leads_to": 14
+            }
+        }
+    },
+    "14": {
+        "text": "A sour-looking unfamiliar face appears before you.",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 15
+    },
+    "15": {
+        "character": "tsun",
+        "sprite": "base",
+        "text": "You must be new. My name's Tsunakadere, but don't think that we're gonna ever become friends. I don't like you like that, so don't get the wrong message!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 16
+            }
+        }
+    },
+    "16": {
+        "character": "kaicho",
+        "sprite": "closed",
+        "text": "Konnichiwassup gng!! Heya Tsunakadere-chan, ya wouldnt mind lending me a pencil, would'ya?",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 17
+            }
+        }
+    },
+    "17": {
+        "character": "tsun",
+        "sprite": "blush",
+        "text": "*blushes*\nY-yes of course, I'll give you one right away!! Do you need anything else, kaicho-san?? I'd do anything for you!! :3",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Could it be...?",
+                "leads_to": 18
+            },
+            "b": {
+                "text": "...YURI??",
+                "leads_to": 18
+            }
+        }
+    },
+    "18": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "*Raises eyebrow, “NANI?” Was that what I think it was!?? C-could it be... IRL WAIFU YURI?!?!?\"",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 19
+            }
+        }
+    },
+    "19": {
+        "character": "tsun",
+        "sprite": "mad",
+        "text": "SHUT YOUR YAPPERY AHH MOUTH UP I FREAKING HATE YOU!! YOUR'E AN INCEL AND A FREAK AND NOBODY LOVES YOU!!!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to continue",
+                "leads_to": 20
+            }
+        }
+    },
+    "20": {
+        "text": "Nobody... loves me...?",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 21
+    },
+    "21": {
+        "text": "Why...? Why do all girls hate me no matter what I do? WHAT DID I DO TO DESERVE THIS??",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 22
+    },
+    "22": {
+        "text": "Screw this. Scew it all. I shall never again be defiled by wordly filth. The only way to fill the newly formed hole in my heart is... ... ... REVENGE!",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 23
+    },
+    "23": {
+        "text": "You reach into your bag and pull out a cold metal object... You pull the trigger and everything turns into a haze...",
+        "type": "narration",
+        "delay": 5,
+        "leads_to": 24
+    },
+    "24": {
+        "character": "main",
+        "sprite": "sad",
+        "text": "H-how did this happen?? I can't believe I did this! I'm doomed now! No girls will ever wanna go after a loser with bloodstained hands like me! Frick my stupid baka life theres no longer a point to living...",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "end it all",
+                "leads_to": 25
+            },
+            "b": {
+                "text": "start over"
+            }
+        }
+    },
+    "25": {
+        "text": "You aim the gun towards your own head, and everything turns to black.\n\n[FIN]",
+        "type": "narration",
+        "delay": 1
     }
 }

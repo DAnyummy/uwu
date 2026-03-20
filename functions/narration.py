@@ -1,21 +1,30 @@
 from time import sleep
-from rich.console import Console
+from rich import print
+from rich.live import Live
+from rich.layout import Layout
+from rich.panel import Panel
+from rich.align import Align
+import keyboard
 
 def narration(text, delay):
-    print("")
+    layout = Layout(
+        Panel("")
+    )
 
-    console = Console()
-    for n in text:
-        console.print(n, style="italic bold", end="")
-        sleep(0.05)
+    with Live(layout, refresh_per_second=32) as live:
+        for i in range(1,len(text)):
+            sleep(0.05)
+            live.update(Panel(Align.center(text[:i], vertical="middle"), style="italic"))
 
     sleep(int(delay))
 
-    print("")
+    print(Panel("Press F to continue: "))
 
-    proceed = input("Press F to proceed: ")
-    while proceed.lower() != "f":
-        print("Try Again!")
-        proceed = input("Press F to proceed: ")
+    while True:
+        if keyboard.is_pressed("f"):
+            #wait till user stops pressing f to move on
+            while True:
+                if not keyboard.is_pressed("f"):
+                    break
+            return
     
-    return 

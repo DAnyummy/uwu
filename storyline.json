@@ -1,3 +1,4 @@
+
 {
     "1": {
         "character": "main",
@@ -142,20 +143,30 @@
     "13": {
         "character": "main",
         "sprite": "sad",
-        "text": "(Sigh.. I'm too dumb and stupid and ugly and nerdy and totally not attractive enough to ever talk to either of them!!! I'll just think about anime alone… with no one to talk about my favorite anime \"Days with my Stepsister\" to..)",
+        "text": "Sigh.. I'm too dumb and stupid and ugly and nerdy and totally not attractive enough for them to talk to me!! Lets approach someone to talk about my favorite anime \"Days with my Stepsister\" to..!",
         "type": "table",
         "answers": {
-            "f": {
-                "text": "Press F to continue",
+            "a": {
+                "text": "Approach the sour-looking girl next to you.",
                 "leads_to": 14
+            },
+            "b": {
+                "text": "Approach Uwa-chan",
+                "leads_to": 36
             }
         }
     },
     "14": {
-        "text": "A sour-looking unfamiliar face appears before you.",
-        "type": "narration",
-        "delay": 1,
-        "leads_to": 15
+        "character": "tsun",
+        "sprite": "mad",
+        "text": "...",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Sup bbg",
+                "leads_to": 15
+            }
+        }
     },
     "15": {
         "character": "tsun",
@@ -203,8 +214,12 @@
         "text": "*Raises eyebrow, “NANI?” Was that what I think it was!? C-could it be... IRL WAIFU YURI?!?!?\"",
         "type": "table",
         "answers": {
-            "f": {
-                "text": "Press F to proceed",
+            "a": {
+                "text": "Yo.. you wouldn't mind kissing in front of me right? Always been a dream of mine to see two beautiful ladies fight for my love.. ",
+                "leads_to": 27
+            },
+            "b": {
+                "text": "It shouldve been me!",
                 "leads_to": 19
             }
         }
@@ -243,27 +258,126 @@
         "text": "You reach into your bag and pull out a cold metal object... You pull the trigger and everything turns into a haze...",
         "type": "narration",
         "delay": 5,
-        "leads_to": 24
+        "leads_to": 26
     },
-    "24": {
+    "26": {
         "character": "main",
         "sprite": "sad",
         "text": "H-how did this happen?? I can't believe I did this! I'm doomed now! No girls will ever wanna go after a loser with bloodstained hands like me! Frick my stupid baka life theres no longer a point to living...",
         "type": "table",
         "answers": {
             "a": {
-                "text": "end it all",
-                "leads_to": 25
+                "text": "End it all",
+                "leads_to": 32
             },
             "b": {
-                "text": "start over"
+                "text": "No! Theres so much ahead of me!"
             }
         }
     },
-    "25": {
-        "text": "You aim the gun towards your own head, and everything turns to black.\n\n[FIN]",
+    "27": {
+        "character": "tsun",
+        "sprite": "mad",
+        "text": "..What did you just say..? How dare you.. How dare you speak such indecency.. in front of Kaicho-sama no less.. How dare you taint her innocence and purity and holyness..",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 28
+            }
+        }
+    },
+    "28": {
+        "character": "main",
+        "sprite": "base",
+        "text": "Whaaat? What's wrong with a lil fun? Shouldn't a girl always follow her superior? Heh, you're probably just flustered.. ",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 29
+            }
+        }
+    },
+    "29": {
+        "character": "kaicho",
+        "sprite": "mad",
+        "text": "... You're fucking crazy. You have some big nuts, guy.",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 30
+            }
+        }
+    },
+    "30": {
+        "character": "tsun",
+        "sprite": "mad",
+        "text": "...",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 31
+            }
+        }
+    },
+    "31": {
+        "text": "You watch Tsunakadere-chan reach for her bag and pull out a certain... sharp object. A knife. ",
         "type": "narration",
         "delay": 1,
-        "leads_to": 1
+        "leads_to": 33
+    },
+    "32": {
+        "text": "You aim the gun towards your own head, and everything turns to black.\n\n[FIN]",
+        "type": "ending",
+        "ending_name": "Unaliving Loserlicious Ending"
+    },
+    "33": {
+        "character": "tsun",
+        "sprite": "blush",
+        "text": "Kaicho-sama, I'd do anything for you. I'd skin myself, and feed you my flesh. I'd carve my own heart out for you. I'd even kill this pathetic excuse of a human for you.. I love you Kaicho-sama..! Please accept this murder as an act of my devotion!",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 34
+            }
+        }
+    },
+    "34": {
+        "text": "Before you could even let out a scream, you feel a sharp tug at your fat stomach rolls. You flop onto the ground. ",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 35
+    },
+    "35": {
+        "text": "As you lay on the cold hard floor, you watch Kaicho-chan and Tsukadere-chan share a passionate kiss. You close your eyes, and listen to the police siren fade into the background. [FIN]",
+        "type": "ending",
+        "ending_name": "Yuritastic Murdervictim Ending"
+    },
+    "36": {
+        "character": "uwa",
+        "sprite": "base",
+        "text": "U-u-uwahhhh!! Senpai decided to approach Uwa-chan?? W-w-w-w-what's the occasion for s-s-s-such a m-m-m-momentous occasion?",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Compliment her unique way of speaking",
+                "leads_to": 37
+            }
+        }
+    },
+    "37": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "*In a soft whisper* Y-your stutters are so cute... sweetie...",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed"
+            }
+        }
     }
 }

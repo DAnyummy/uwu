@@ -1,28 +1,51 @@
 from functions.dialogue import dialogue
 from functions.narration import narration
+from functions.ending import ending
+from functions.quit import quit
 from rich.console import Console
 import json
 import os
 
 console = Console()
 
+def get_endings(storyline_array):
+    return [
+        index
+        for index, node in storyline_array.items()
+        if node["type"] == "ending"
+    ]
+
+with open('storyline.json', 'r', encoding="utf-8") as file:
+    storyline = json.load(file)
+
+# array of which endings we have completed
+endings_completed = []
+total_endings = get_endings(storyline)
+
 # TODO: implement parser function, parses JSON file and runs game
 def parser():
-    with open('storyline.json', 'r', encoding="utf-8") as file:
-        gamefile = json.load(file)
+    index_at = 1
+    while True:
+        os.system("cls")
 
-        index_at = 1
-        while True:
-            console.show_cursor(False)
+        current = storyline[f"{index_at}"]
 
-            os.system('cls' if os.name == 'nt' else 'clear')
-            current = gamefile[f"{index_at}"]
+        if current["type"] == "table":
+            answer = dialogue(current["character"], current["sprite"], current["text"], current["answers"])
+            index_at = int(answer["leads_to"])
+        elif current["type"] == "narration":
+            narration(current["text"], int(current["delay"]))
+            index_at = int(current["leads_to"])
+        elif current["type"] == "ending":
+            endings_completed.append(str(index_at))
 
-            if current["type"] == "table":
-                answer = dialogue(current["character"], current["sprite"], current["text"], current["answers"])
-                index_at = int(answer["leads_to"])
-            elif current["type"] == "narration":
-                narration(current["text"], int(current["delay"]))
-                index_at = int(current["leads_to"])
+            result = ending(current["ending_name"])
+
+            if result == "quit":
+                os.system("cls")
+
+                return quit(endings_completed, total_endings)
+            elif result == "restart":
+                index_at = 1
 
 parser()

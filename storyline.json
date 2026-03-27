@@ -1,4 +1,3 @@
-
 {
     "1": {
         "character": "main",
@@ -24,8 +23,12 @@
         "text": "(Omg! She’s so kawaii!!! UWahhh, should I talk to her???)",
         "type": "table",
         "answers": {
-            "f": {
-                "text": "Press F to proceed.",
+            "a": {
+                "text": "No, i'm too much of a dum-dum stupid chud to EVER talk to a FEMALE...",
+                "leads_to": 5
+            },
+            "b": {
+                "text": "...But let me at least take a glance",
                 "leads_to": 4
             }
         }
@@ -147,12 +150,12 @@
         "type": "table",
         "answers": {
             "a": {
-                "text": "Approach the sour-looking girl next to you.",
-                "leads_to": 14
-            },
-            "b": {
                 "text": "Approach Uwa-chan",
                 "leads_to": 36
+            },
+            "b": {
+                "text": "Approach the angry looking girl in the distance",
+                "leads_to": 14
             }
         }
     },
@@ -271,7 +274,8 @@
                 "leads_to": 32
             },
             "b": {
-                "text": "No! Theres so much ahead of me!"
+                "text": "No! Theres so much ahead of me!",
+                "leads_to": 46
             }
         }
     },
@@ -376,8 +380,101 @@
         "type": "table",
         "answers": {
             "f": {
-                "text": "Press F to proceed"
+                "text": "Press F to proceed",
+                "leads_to": 38
             }
         }
+    },
+    "38": {
+        "character": "uwa",
+        "sprite": "blush",
+        "text": "*Blushes* N-n-nobody has e-e-e-ever said a-a-anything l-like this t-t-o me b-before....",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 39
+            }
+        }
+    },
+    "39": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "Heh, ill love you enough to make up for the unfairness you have lived through..\n",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 40
+            }
+        }
+    },
+    "40": {
+        "text": "6.9 loooong years later",
+        "type": "narration",
+        "delay": 1,
+        "leads_to": 41
+    },
+    "41": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "Sweetilicious Cutiepiedarling69, im HOMEE!!!!!! How’s it going with Bartholomew, Oswald, Buckley, Dickenson, Margarett and Hamburger??",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 42
+            }
+        }
+    },
+    "42": {
+        "character": "uwa",
+        "sprite": "blush",
+        "text": "*Holds her pregnant belly* Th-they’re d-doing a-amazing!",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Touch her pregnant belly",
+                "leads_to": 43
+            },
+            "b": {
+                "text": "Smile at her",
+                "leads_to": 43
+            }
+        }
+    },
+    "43": {
+        "character": "uwa",
+        "sprite": "blush",
+        "text": "*Blushes* \nI-I’m s-so h-h-happy I d-decided t-to d-dedicate th-the r-rest of m-my l-life o-on b-being b-by y-your s-side f-for th-the r-rest o-of e-eternity u-until d-death d-do us p-part foweverrrrr!!!!!! UwU",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Express your blissful joy",
+                "leads_to": 44
+            }
+        }
+    },
+    "44": {
+        "character": "main",
+        "sprite": "blush",
+        "text": "Yeehaw im so happy",
+        "type": "table",
+        "answers": {
+            "f": {
+                "text": "Press F to proceed",
+                "leads_to": 45
+            }
+        }
+    },
+    "45": {
+        "text": "YAY!",
+        "type": "ending",
+        "ending_name": "Til Deth Du Us Party Ending"
+    },
+    "46": {
+        "text": "You turn yourself in to the police and atone for your sins.\n\n[FIN]",
+        "type": "ending",
+        "ending_name": "Good boii Ending"
     }
 }

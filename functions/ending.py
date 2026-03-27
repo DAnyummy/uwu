@@ -12,12 +12,12 @@ def ending(ending_name):
     answer_panel.split_row(
         Panel(
                 Align.center("Play again and unlock other endings", vertical="middle"), 
-                title="A",
+                title="R",
                 style="rgb(255,182,193)",
             ),
         Panel(
                 Align.center("Quit", vertical="middle"), 
-                title="B",
+                title="Q",
                 style="rgb(255,182,193)"
             )
         ),
@@ -31,9 +31,9 @@ def ending(ending_name):
     print(layout)
     
     while True: 
-        if keyboard.is_pressed("a"):
+        if keyboard.is_pressed("r"):
             while True:
-                if not keyboard.is_pressed("a"):
+                if not keyboard.is_pressed("r"):
                     return "restart"
         elif keyboard.is_pressed("q"):
             while True:

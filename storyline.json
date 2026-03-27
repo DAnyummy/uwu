@@ -138,7 +138,7 @@
         }
     },
     "12": {
-        "text": "You arrive at the classroom. \\n You look around and see everyone sit amongst their friends. Everyone except for you.",
+        "text": "You arrive at the classroom. \nYou look around and see everyone sit amongst their friends. Everyone except for you.",
         "type": "narration",
         "delay": 1,
         "leads_to": 13
@@ -243,16 +243,10 @@
         "text": "Nobody... loves me...?",
         "type": "narration",
         "delay": 1,
-        "leads_to": 21
-    },
-    "21": {
-        "text": "Why...? Why do all girls hate me no matter what I do? WHAT DID I DO TO DESERVE THIS??",
-        "type": "narration",
-        "delay": 1,
-        "leads_to": 22
+        "leads_to": 47
     },
     "22": {
-        "text": "Screw this. Scew it all. I shall never again be defiled by wordly filth. The only way to fill the newly formed hole in my heart is... ... ... REVENGE!",
+        "text": "Screw this. Screw it all. I shall never again be defiled by worldly filth. The only way to fill the newly formed hole in my heart is... ... ... REVENGE!",
         "type": "narration",
         "delay": 1,
         "leads_to": 23
@@ -306,7 +300,7 @@
     "29": {
         "character": "kaicho",
         "sprite": "mad",
-        "text": "... You're fucking crazy. You have some big nuts, guy.",
+        "text": "... You're friggin crazy. You have some big nuts, guy.",
         "type": "table",
         "answers": {
             "f": {
@@ -476,5 +470,38 @@
         "text": "You turn yourself in to the police and atone for your sins.\n\n[FIN]",
         "type": "ending",
         "ending_name": "Good boii Ending"
+    },
+    "47": {
+        "character": "main",
+        "sprite": "sad",
+        "text": "Why...? Why do all girls hate me no matter what I do? WHAT DID I DO TO DESERVE THIS??",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Make a new start and improve as a person",
+                "leads_to": 48
+            },
+            "b": {
+                "text": "Take revenge on everyone who has once wronged you",
+                "leads_to": 22
+            }
+        }
+    },
+    "48": {
+        "character": "main",
+        "sprite": "base",
+        "text": "I-I can make a new start and redeem myself to new people! ",
+        "type": "table",
+        "answers": {
+            "a": {
+                "text": "Change schools and meet new people",
+                "leads_to": 49
+            }
+        }
+    },
+    "49": {
+        "text": "You start a new school and the cycle repeats. You are shunned by everyone for being a weirdo incel freak #chudlife\n[FIN]",
+        "type": "ending",
+        "ending_name": "Chudalicious weeb ending"
     }
 }

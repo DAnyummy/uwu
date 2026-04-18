@@ -70,10 +70,6 @@
             "b": {
                 "text": "Pet Uwa-chans ears and ask if she can show you to the classroom!",
                 "leads_to": 10
-            },
-            "c": {
-                "text": "Ignore them and head to class.",
-                "leads_to": 12
             }
         }
     },

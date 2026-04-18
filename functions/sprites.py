@@ -8,5 +8,3 @@ def get_sprite(name, ver):
     new_width = int(new_height * (img.width / img.height))
     img = img.resize((new_width, new_height))
     return Pixels.from_image(img)
-
-
